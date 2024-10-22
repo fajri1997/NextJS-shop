@@ -1,8 +1,9 @@
 import products from "../products";
 
+// calling the array how ever we need <img> to call url how ever i thought <p>{product.image} would work but we need <img src and we use with alt  alt={product.name}
 function ProductList() {
   const productList = products.map((product) => (
-    <div key={product.id} className="text-center">
+    <div key={product.id} className="text-center text-black">
       <img
         src={product.image}
         alt={product.name}
